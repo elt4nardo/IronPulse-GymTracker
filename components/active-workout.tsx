@@ -67,6 +67,7 @@ export function ActiveWorkout({
         .insert({
           user_id: user.id,
           routine_id: routine.id,
+          routine_name: routine.name,
           started_at: new Date().toISOString(),
           status: "in_progress",
         })
